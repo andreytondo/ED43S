@@ -1,2 +1,2 @@
 # ED43S
-All unit assignments from Universidade Tecnológica Federal do Paraná elective ED43S
+Comprehensive collection of unit assignments within the field of study 'Estruturas De Dados II (ED43S)' at Universidade Tecnológica Federal do Paraná.
