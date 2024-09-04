@@ -56,6 +56,11 @@ int main() {
     createItems(gameGraph);
     createNPCs(gameGraph);
 
+    // Print the game graph
+    printGraph(gameGraph);
+
+    printf("\n\n");
+
     // Run the game
     runGame(gameGraph);
 

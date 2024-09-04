@@ -31,3 +31,31 @@ void freeGraph(Graph* graph) {
         free(graph);
     }
 }
+
+void printGraph(Graph* graph) {
+    printf("====================================\n\n");
+
+    for (int i = 0; i < graph->numLocations; i++) {
+        printf("[%s]", graph->locations[i]->name);
+
+        int connections = 0;
+        for (int j = 0; j < graph->numLocations; j++) {
+            if (graph->adjacencyMatrix[i][j] == 1) {
+                if (connections == 0) {
+                    printf(" --> ");
+                } else {
+                    printf(", ");
+                }
+                printf("[%s]", graph->locations[j]->name);
+                connections++;
+            }
+        }
+
+        if (connections == 0) {
+            printf(" --> (Sem conexoes)");
+        }
+        printf("\n");
+    }
+
+    printf("\n====================================\n");
+}
